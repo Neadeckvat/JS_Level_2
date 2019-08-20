@@ -1,0 +1,70 @@
+// out: ../css/style.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+.feedback {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1%;
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    .input_row {
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 18px;
+        color: rgb(153, 153, 153);
+        outline: none;
+        border: 1px solid rgb(199, 190, 190);
+        border-radius: 4px;
+    }
+    .input_row:focus {
+        color: black;
+    }
+    .text {
+        resize: none;
+    }
+    .submit_btn {
+        margin: 20px 75% 0 0;
+        padding: 5px 10px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(199, 190, 190);
+        border-radius: 10px;
+        outline: none;
+        color: rgb(155, 155, 155);
+        cursor: pointer;
+        transition: .2s linear;
+    }
+    .submit_btn:hover {
+        color: black;
+        border: 1px solid rgb(80, 80, 80);
+    }
+    .submit_btn:active {
+        color: black;
+        border: 1px solid rgb(199, 190, 190);
+        color: rgb(155, 155, 155);
+    }
+    .error {
+        border-color: red;
+    }
+}
