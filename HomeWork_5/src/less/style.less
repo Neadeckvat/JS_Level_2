@@ -1,0 +1,85 @@
+// out: ../css/style.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #2f2a2d;
+    color: #fafafa;
+    padding: 30px 80px;
+    position: relative;
+    .cart-button {
+        background-color: #fafafa;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        color: #2f2a2d;
+        border-radius: 5px;
+        transition: all ease-in-out .4s;
+        cursor: pointer;
+        outline: none;
+    }
+    .cart-button:hover {
+        background-color: transparent;
+        border-color: #fafafa;
+        color: #fafafa;
+    }
+    .cart-search {
+        outline: none;
+        margin-right: 30px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        padding: 5px 10px;
+        transition: all ease-in-out .4s;
+    }
+    .cart-search-button {
+        margin-right: 10px;
+        padding: 8px 8px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        outline: none;
+        fill: gray;
+        cursor: pointer;
+    }
+    .cart-search-button:hover {
+        fill: white;
+    }
+    .cart-search-button:active {
+        fill: gray;
+    }
+    .cart-content {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 400px;
+        height: 100px;
+        background-color: white;
+    }
+}
+main {
+    .goods-list {
+        padding: 40px 80px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .goods-item {
+            background-color: #fafafa;
+            margin: 20px 0;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid gray;
+        }
+    }
+}
